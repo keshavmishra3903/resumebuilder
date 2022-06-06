@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+</head>
+<body>
+
+    <div id="master-form">
+        <header>
+            <h1>RESUME BUILDER</h1>
+            <p>Simple and fast way to prepare your dashing resume.</p>
+        </header>
+        <div class="form">
+            <div class="div-1">
+                <div class="fieldset">
+                    <div>
+                        <label for="name">Name :</label><br>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div>
+                        <label for="contact">Contact No. :</label><br>
+                        <input type="text" id="contact" name="contact">
+                    </div>
+                    <div>
+                        <label for="location">Location :</label><br>
+                        <input type="text" id="location" name="location">
+                    </div>
+                    <div>
+                        <label for="email">Email-ID :</label><br>
+                        <input type="text" id="email" name="email">
+                    </div>
+                </div>
+                <div class="fieldset">
+                    <div id="edu-set">
+                        <div id="edu-div">
+                            <label for="education">Education :</label><br>
+                            <input type="text" id="education" name="education">
+                        </div>
+                    </div>
+                    <button onclick="addMoreEdu()">Add more</button>
+                </div>
+            </div>
+        
+            <div class="div-2">
+                <div class="fieldset">
+                    <div id="skill-set">
+                        <div id="skills-div">
+                            <label for="skills">Skills :</label><br>
+                            <input type="text" id="skills" name="skills">
+                        </div>
+                    </div>
+                        <button onclick="addMoreSkills()">Add more</button>
+                </div>
+                <div class="fieldset">
+                    <div id="affiliations-set">
+                        <div id="affiliations-div">
+                            <label for="affiliations">Affiliations :</label><br>
+                            <input type="text" id="affiliations" name="affiliations">
+                        </div>
+                    </div>
+                    <button onclick="addMoreAffiliations()">Add more</button>
+                </div>
+        
+                <div class="fieldset">
+                    <div id="proskills-set">
+                        <div id="proskills-div">
+                            <label for="proskills">Professional Skills :</label><br>
+                            <input type="text" id="proskills" name="proskills">
+                        </div>
+                    </div>
+                    <button onclick="addMoreProskills()">Add more</button>
+                </div>
+                <div class="fieldset">
+                    <div>
+                        Work History :
+                        <div id="wh-set">
+                            <div class="fieldset" id="wh-div">
+                                <div>
+                                    <label for="company">Company :</label><br>
+                                    <input type="text" id="company" name="company">
+                                </div>
+                                <div>
+                                    <label for="position">Position :</label><br>
+                                    <input type="text" id="position" name="position">
+                                </div>
+                                <div>
+                                    <label for="location">Location :</label><br>
+                                    <input type="text" id="location" name="location">
+                                </div>
+                                <div>
+                                    <label for="start">From :</label><br>
+                                    <input type="date" id="start" name="start" value="2022-01-01">
+                                </div>
+                                <div>
+                                    <label for="end">To :</label><br>
+                                    <input type="date" id="end" name="end" value="2022-01-01">
+                                </div>
+                            </div>
+                        </div>
+                        <button onclick="addMoreWh()">Add more</button>
+                    </div>
+                </div>
+                <div class="fieldset">
+                    <div>
+                        <label for="summary">Professional Summary :</div>
+                        <textarea name="summary" id="summary" cols="70" rows="5"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="submit-div">
+            <button id="submit" onclick="generateResume()">Generate Resume</button>
+        </div>
+    </div>
+
+    <div id="cv-temp-main">
+        <hr><hr id="division-hr">
+        <div class="cv-temp">
+            <div class="div-3">
+                <div id="name-temp-div">
+                    <h1 id="name-temp">(No Name)</h1>
+                </div>
+                <hr id="name-hr">
+                <div class="prof-sum-div-temp">
+                    <h3 class="sub-heading-temp">Professional Summary</h2>
+                    <hr class="sub-heading-hr">
+                </div>
+                <div class="content-temp" id="summary-temp">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae cupiditate inventore fuga magni iste laborum unde iusto ipsum facere dolores rerum autem, nesciunt iure dolore mollitia quibusdam repellendus numquam dolor!
+                </div>
+                <div class="wh-div-temp">
+                    <h3 class="sub-heading-temp">Work History</h3>
+                    <hr class="sub-heading-hr">
+                    <ul class="content-temp">
+                        <li>SHARRY BHAI , adipisicing elit. Praesentium, tempora.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, tempora.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, tempora.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, tempora.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, tempora.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, tempora.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="div-4">
+                <div id="location-temp">
+                    (No Location)
+                </div>
+                <div id="numbers-temp">
+                    (No Contacts)
+                </div>
+                <div id="email-temp">
+                    (No E-mail)
+                </div>
+                <div class="skills-temp-div">
+                    <h3 class="sub-heading-temp-rt">Skills</h3>
+                    <hr class="sub-heading-hr">
+                    <ul class="content-temp" id="skills-temp">
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                </div>
+                <div class="edu-temp-div">
+                    <h3 class="sub-heading-temp-rt">Education</h3>
+                    <hr class="sub-heading-hr">
+                    <ul class="content-temp" id="education-temp">
+                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                    </ul>
+                </div>
+                <div class="affiliations-temp-div">
+                    <h3 class="sub-heading-temp-rt">Affiliations</h3>
+                    <hr class="sub-heading-hr">
+                    <ul class="content-temp" id="affiliations-temp">
+                        <li>tanmay agrawal is great consectetur adipisicing elit. Sint, maiores!</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, maiores!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="print-resume-div">
+            <button id="print-resume-button" onclick="printResume()">Print Resume</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

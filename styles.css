@@ -1,0 +1,188 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px 10%;
+    font-size: 1.1rem;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+  }
+
+header {
+    text-align: center;
+    color: white;
+    background-color: #abd699;
+    margin: 15px 0 25px 0;
+    padding: 1px 0;
+}
+
+header h1 {
+    font-size: 2.2rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.div-1 {
+    width: 38%;
+}
+
+.div-2 {
+    width: 58%;
+}
+
+.div-1 div, .div-2 div {
+    /* border: 1px solid red; */
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.fieldset {
+    border: 1px solid grey;
+}
+
+input[type=text] {
+    width: 97%;
+    margin: 3px 3%;
+    padding: 3px;
+    border: none;
+    border-bottom: 1px solid grey;
+    outline: none;
+    transition: height 1s;
+}
+
+input[typt=text]:focus {
+    border: 1px solid red;
+}
+
+button {
+    background-color: beige;
+    border: 1px solid white;
+    color: grey;
+    padding: 8px 15px;
+    margin: 10px;
+    text-align: center;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+    border: 1px solid black;
+}
+
+textarea {
+    width: 90%;
+    height: 100px;
+    padding: 12px 20px;
+    border: 1px solid grey;
+    resize: none;
+}
+
+#submit-div, #print-resume-div {
+    text-align: center;
+    margin: 10px 0;
+}
+
+#submit, #print-resume-button {
+    width: 30%;
+    padding: 10px;
+}
+
+#edu-set {
+    margin: -10px 0;
+}
+
+#skill-set {
+    margin: -10px 0;
+}
+
+#affiliations-set {
+    margin: -10px 0;
+}
+
+#proskills-set {
+    margin: -10px 0;
+}
+
+#wh-set {
+    margin: -10px 0;
+}
+
+#division-hr {
+    margin-bottom: 20px;
+}
+
+#cv-temp-main {
+    display: none;
+}
+
+.cv-temp {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.div-3 {
+    width: 60%;
+}
+
+.div-4 {
+    width: 40%;
+    background-color: #5b6b7a;
+    color: white;
+}
+
+#name-temp {
+    text-transform: uppercase;
+    color: #5b6b7a;
+}
+
+#name-hr {
+    margin: -15px 30px 30px 0;
+}
+
+.sub-heading-temp {
+    text-transform: uppercase;
+    color: #5b6b7a;
+}
+
+.sub-heading-hr {
+    margin: -20px 30px 25px 0;
+}
+
+.content-temp {
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+#location-temp {
+    font-size: 1rem;
+    margin: 50px 0 20px 30px;
+}
+
+#numbers-temp {
+    font-size: 1rem;
+    margin: 20px 0 20px 30px;
+}
+
+#email-temp {
+    font-size: 1rem;
+    margin: 20px 0 40px 30px;
+}
+
+.sub-heading-temp-rt {
+    text-transform: uppercase;
+    color: white;
+    margin-left: 30px;
+}
